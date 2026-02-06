@@ -31,6 +31,20 @@ MODEL_PATHS = {
     "xgboost": "model/saved_models/xgboost.pkl",
 }
 
+# -----------------------------
+# Dataset Download Section
+# -----------------------------
+st.subheader("📥 Download Dataset")
+
+with open("data/heart.csv", "rb") as f:
+    st.download_button(
+        label="⬇ Download Heart Disease Dataset (heart.csv)",
+        data=f,
+        file_name="heart.csv",
+        mime="text/csv"
+    )
+
+
 tab1, tab2, tab3, tab4 = st.tabs(["📊 Comparison", "📈 ROC Curves", "🔍 Confusion Matrix", "📄 Classification Report"])
 
 # ---- TAB 1 ----
