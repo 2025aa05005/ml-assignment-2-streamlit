@@ -45,7 +45,7 @@ with open("data/heart.csv", "rb") as f:
     )
 
 
-tab1, tab2, tab3, tab4 = st.tabs(["📊 Comparison", "📈 ROC Curves", "🔍 Confusion Matrix", "📄 Classification Report"])
+tab2, tab3, tab4, tab1 = st.tabs(["📈 ROC Curves", "🔍 Confusion Matrix", "📄 Classification Report", "📊 Comparison"])
 
 # ---- TAB 1 ----
 with tab1:
