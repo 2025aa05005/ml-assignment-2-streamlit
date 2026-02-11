@@ -48,14 +48,18 @@ F1 Score
 Matthews Correlation Coefficient (MCC)
 
 📈 Model Comparison Table
-ML Model	Accuracy	AUC	Precision	Recall	F1	MCC
-Logistic Regression	0.86	0.91	0.87	0.84	0.85	0.72
-Decision Tree	0.82	0.85	0.83	0.81	0.82	0.65
-KNN	0.84	0.88	0.85	0.83	0.84	0.68
-Naive Bayes	0.83	0.86	0.82	0.84	0.83	0.66
-Random Forest	0.89	0.94	0.90	0.88	0.89	0.78
-XGBoost	0.91	0.96	0.92	0.90	0.91	0.81
+
+ML Model	                Accuracy	AUC	      Precision	  Recall	    F1	        MCC
+Logistic Regression	      0.809756	0.92981	  0.761905	  0.914286	  0.831169	  0.630908
+Decision Tree	            0.985366	0.985714	1	          0.971429	  0.985507	  0.971151    
+KNN	                      0.863415	0.962905	0.873786	  0.857143	  0.865385	  0.726935
+Naive Bayes	              0.829268	0.904286	0.807018	  0.87619	    0.840183	  0.660163
+Random Forest (Ensemble)	1	        1	        1	          1	          1	          1
+XGBoost (Ensemble)	      1	        1         1           1	          1	          1
+
+
 🧠 Model Performance Observations
+
 Model	Observation
 Logistic Regression	Strong baseline, works well on linearly separable data
 Decision Tree	Easy to interpret but prone to overfitting
@@ -63,6 +67,7 @@ KNN	Sensitive to feature scaling, moderate performance
 Naive Bayes	Assumes feature independence, reasonable results
 Random Forest	Robust ensemble model, reduces overfitting
 XGBoost	Best performing model with highest AUC and MCC
+
 🌐 Streamlit App Features
 
 Dataset upload option (CSV)
